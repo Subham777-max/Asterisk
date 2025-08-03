@@ -7,13 +7,13 @@ function ButtonAside({menue,setMenue,setButtonType}){
                     <button onClick={()=>setMenue(false)} className={`text-2xl mt-[14vh] lg:hidden`}><ImCross /></button>
                     <div className="flex flex-col items-center justify-between w-full lg:hidden h-[70vh] ">
                         <ul className="flex flex-col items-center w-full gap-4 mt-4 font-semibold lg:hidden">
-                            <li onClick={()=>setButtonType('normal')} className="px-4 py-2 rounded-md transition-all duration-300 cursor-pointer hover:bg-[#3B4451] hover:pl-6">
+                            <li onClick={()=>{setButtonType('normal');window.scrollTo({ top: 0, behavior: 'smooth' });}} className="px-4 py-2 rounded-md transition-all duration-300 cursor-pointer hover:bg-[#3B4451] hover:pl-6">
                                 Normal Button
                             </li>
-                            <li onClick={()=>setButtonType('glow')} className="px-4 py-2 rounded-md transition-all duration-300 cursor-pointer hover:bg-[#3B4451] hover:pl-6">
+                            <li onClick={()=>{setButtonType('glow');window.scrollTo({ top: 0, behavior: 'smooth' });}} className="px-4 py-2 rounded-md transition-all duration-300 cursor-pointer hover:bg-[#3B4451] hover:pl-6">
                                 Glowing Button
                             </li>
-                            <li onClick={()=>setButtonType('animate')} className="px-4 py-2 rounded-md transition-all duration-300 cursor-pointer hover:bg-[#3B4451] hover:pl-6">
+                            <li onClick={()=>{setButtonType('animate');window.scrollTo({ top: 0, behavior: 'smooth' });}} className="px-4 py-2 rounded-md transition-all duration-300 cursor-pointer hover:bg-[#3B4451] hover:pl-6">
                                 Animated Button
                             </li>
                         </ul>
@@ -26,13 +26,13 @@ function ButtonAside({menue,setMenue,setButtonType}){
 
                 <div className="hidden w-full lg:flex mt-[16vh] h-[70vh] flex-col items-center justify-between">
                     <ul className="flex flex-col items-center w-full gap-4 mt-4 font-semibold">
-                        <li onClick={()=>setButtonType('normal')} className="px-4 py-2 rounded-md transition-all duration-300 cursor-pointer hover:bg-[#3B4451] hover:pl-6">
+                        <li onClick={()=>{setButtonType('normal');window.scrollTo({ top: 0, behavior: 'smooth' });}} className="px-4 py-2 rounded-md transition-all duration-300 cursor-pointer hover:bg-[#3B4451] hover:pl-6">
                                 Normal Button
                         </li>
-                        <li onClick={()=>setButtonType('glow')} className="px-4 py-2 rounded-md transition-all duration-300 cursor-pointer hover:bg-[#3B4451] hover:pl-6">
+                        <li onClick={()=>{setButtonType('glow');window.scrollTo({ top: 0, behavior: 'smooth' });}} className="px-4 py-2 rounded-md transition-all duration-300 cursor-pointer hover:bg-[#3B4451] hover:pl-6">
                                 Glowing Button
                         </li>
-                        <li onClick={()=>setButtonType('animate')} className="px-4 py-2 rounded-md transition-all duration-300 cursor-pointer hover:bg-[#3B4451] hover:pl-6">
+                        <li onClick={()=>{setButtonType('animate');window.scrollTo({ top: 0, behavior: 'smooth' });}} className="px-4 py-2 rounded-md transition-all duration-300 cursor-pointer hover:bg-[#3B4451] hover:pl-6">
                                 Animated Button
                         </li>
                     </ul>
