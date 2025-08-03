@@ -17,9 +17,9 @@ function Navbar() {
                     onClick={() => navigator("/")}
                     className="flex items-center font-mono text-2xl font-extrabold tracking-widest text-transparent cursor-pointer md:text-4xl lg:text-5xl bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-500 to-pink-500 animate-pulse hover:scale-[1.03] transition-all duration-300"
                 >
-                    <span className="inline-block animate-floatY">**</span>
+                    <span className="inline-block text-transparent animate-floatY bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-500 to-pink-500">**</span>
                     ASTERISK
-                    <span className="inline-block animate-floatY">**</span>
+                    <span className="inline-block text-transparent animate-floatY bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-500 to-pink-500">**</span>
                 </div>
 
                 {/* Menu Items */}
