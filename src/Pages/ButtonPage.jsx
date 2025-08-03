@@ -6,7 +6,7 @@ import Footer from "../Components/Footter/Footer";
 
 function ButtonPage() {
   const [menue, setMenue] = useState(false);
-  const [buttonType, setButtonType] = useState("normal");
+  const [buttonType, setButtonType] = useState("Normal Buttons");
 
   return (
     <div className="flex flex-col min-h-screen">

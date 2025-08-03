@@ -27,7 +27,7 @@ function Hero(){
                     </button>
                 </div>
 
-                <div className="absolute z-50 hidden p-4 md:block bottom-4 right-4">
+                <div className="absolute z-10 hidden p-4 md:block bottom-4 right-4">
                     <h1 className="text-xl text-white animate-floatY2"><FaArrowDownLong /></h1>
                 </div>
 
