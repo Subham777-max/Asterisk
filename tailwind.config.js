@@ -27,6 +27,18 @@ export default {
           '0%, 100%': { boxShadow: '0 0 10px #22c55e, 0 0 20px #22c55e' },
           '50%': { boxShadow: '0 0 20px #4ade80, 0 0 30px #4ade80' },
         },
+        floatX: {
+          '0%, 100%': { transform: 'translateX(0px)' },
+          '50%': { transform: 'translateX(20px)' },
+        },
+        floatY3: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-20px)' },
+        },
+        spinSlow: {
+          from: { transform: 'rotate(0deg)' },
+          to: { transform: 'rotate(360deg)' },
+        },
       },
       animation: {
         floatY: 'floatY 3s ease-in-out infinite',

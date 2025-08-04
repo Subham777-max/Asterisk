@@ -3,6 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import NormalButton from "../ButtonTypes/NormalButton";
 import GlowingButtons from "../GlowingButtons/GlowingButtons";
 import AnimetedButtons from "../AnimatedButtons/AnimatedButtons"
+import NormalCards from "../NormalCards/NormalCards";
 
 function MainComponent({menue,setMenue,type,selectedComponent }){
       
@@ -19,6 +20,17 @@ function MainComponent({menue,setMenue,type,selectedComponent }){
                     </>}
                     {type==='Animated Buttons' && <>
                         <AnimetedButtons />
+                    </>}
+                </>}
+                {selectedComponent==="Cards" && <>
+                    {type==='Normal Cards' && <>
+                    <NormalCards />
+                    </>}
+                    {type==='Glowing Cards' && <>
+
+                    </>}
+                    {type==='Animated Buttons' && <>
+                        
                     </>}
                 </>}
             </main>

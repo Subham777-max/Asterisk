@@ -12,7 +12,7 @@ function ButtonPage() {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       
-      {/* Page content grows to fill available space */}
+      
       <div className="flex-1">
         <ButtonMain menue={menue} setMenue={setMenue} buttonType={buttonType} />
         <ButtonAside menue={menue} setMenue={setMenue} setButtonType={setButtonType} />

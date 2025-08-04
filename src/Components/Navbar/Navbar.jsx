@@ -59,7 +59,9 @@ function Navbar() {
                                 <li className="transition-all duration-200 cursor-pointer hover:text-pink-400 hover:translate-x-1">
                                     Navbars
                                 </li>
-                                <li className="transition-all duration-200 cursor-pointer hover:text-pink-400 hover:translate-x-1">
+                                <li 
+                                    onClick={() => navigator("/Cards")} 
+                                    className="transition-all duration-200 cursor-pointer hover:text-pink-400 hover:translate-x-1">
                                     Cards
                                 </li>
                             </ul>
