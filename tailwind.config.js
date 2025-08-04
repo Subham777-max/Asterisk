@@ -39,6 +39,10 @@ export default {
           from: { transform: 'rotate(0deg)' },
           to: { transform: 'rotate(360deg)' },
         },
+        rotate: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
       },
       animation: {
         floatY: 'floatY 3s ease-in-out infinite',
@@ -46,6 +50,7 @@ export default {
         glow: 'glow 1.5s ease-in-out infinite',
         glowRed: 'glowRed 1.5s ease-in-out infinite',
         glowGreen: 'glowGreen 1.5s ease-in-out infinite',
+        'spin-slow': 'rotate 2s linear infinite',
       },
     },
   },
