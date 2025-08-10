@@ -5,6 +5,7 @@ import GlowingButtons from "../GlowingButtons/GlowingButtons";
 import AnimetedButtons from "../AnimatedButtons/AnimatedButtons"
 import NormalCards from "../NormalCards/NormalCards";
 import GlowingCard from "../GlowingCards/GlowingCards";
+import SpecialCards from "../SpecialCards/SpecialCards";
 
 function MainComponent({menue,setMenue,type,selectedComponent }){
       
@@ -30,8 +31,8 @@ function MainComponent({menue,setMenue,type,selectedComponent }){
                     {type==='Glowing Cards' && <>
                         <GlowingCard />
                     </>}
-                    {type==='Animated Buttons' && <>
-                        
+                    {type==='Special Cards' && <>
+                        <SpecialCards />
                     </>}
                 </>}
             </main>

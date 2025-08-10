@@ -78,6 +78,6 @@ export function GlowCard3(){
                     <p class="text-sm opacity-80">This is a modern glassy card with a glowing gradient shadow on hover.</p>
                 </div>
             
-        </>
+        </> 
     )
 }

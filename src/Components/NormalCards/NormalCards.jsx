@@ -1,5 +1,6 @@
 import CodePlate from "../CodePlate/CodePlate";
-import { EcommerceCard, NatureCard, ProfileCard } from "./Cards";
+import { EcommerceCard, NatureCard, ProfileCard, SignInSignUpCard } from "./Cards";
+import { nccodes } from "./nccodes";
 
 function NormalCards(){
     return(
@@ -16,6 +17,9 @@ function NormalCards(){
                     <div className="w-full md:w-[50rem]">
                         <CodePlate 
                             preview={<ProfileCard />}
+                            htmlCode={nccodes[0].html}
+                            cssCode={nccodes[0].css}
+                            jsCode={nccodes[0].js}
                         />
                     </div>
                     
@@ -27,6 +31,9 @@ function NormalCards(){
                     <div className="w-full md:w-[50rem]">
                         <CodePlate 
                            preview={<EcommerceCard />}
+                           htmlCode={nccodes[1].html}
+                            cssCode={nccodes[1].css}
+                            jsCode={nccodes[1].js}
                         />
                     </div>
                     
@@ -39,11 +46,28 @@ function NormalCards(){
                     <div className="w-full md:w-[50rem]">
                         <CodePlate 
                            preview={<NatureCard />}
+                           htmlCode={nccodes[2].html}
+                            cssCode={nccodes[2].css}
+                            jsCode={nccodes[2].js}
                         />
                     </div>
                  
                 </div>
-            </section>
+                <h1 className="text-2xl font-bold text-white mb-6 border-b-2 border-[#3B4451] inline-block pb-2 mt-4">
+                    4{")"}SignIn & SignUp :
+                </h1>
+                <div className="flex flex-col items-center justify-center w-full gap-5">
+                    <div className="w-full md:w-[50rem]">
+                        <CodePlate 
+                           preview={<SignInSignUpCard />}
+                           htmlCode={nccodes[3].html}
+                            cssCode={nccodes[3].css}
+                            jsCode={nccodes[3].js}
+                        />
+                    </div>
+                 
+                </div>
+            </section> 
         </div>
         </>
     );

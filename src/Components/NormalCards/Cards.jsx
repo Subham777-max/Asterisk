@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import profileImg from '../../Img/profileImg.jpg';
 import headPhone from '../../Img/headPhone.jpg'
 
@@ -102,3 +103,86 @@ export function NatureCard(){
         </>
     );
 }
+
+
+
+export  function SignInSignUpCard() {
+  const [mode, setMode] = useState("signin");
+
+  return (
+    
+      <div className="w-full max-w-md p-8 bg-white shadow-lg rounded-2xl">
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-2xl font-semibold">
+            {mode === "signin" ? "Sign In" : "Sign Up"}
+          </h2>
+          <button
+            onClick={() => setMode(mode === "signin" ? "signup" : "signin")}
+            className="text-sm text-blue-600 hover:underline"
+          >
+            {mode === "signin" ? "Create Account" : "Sign In"}
+          </button>
+        </div>
+
+        <form className="space-y-4">
+          {mode === "signup" && (
+            <input
+              type="text"
+              placeholder="Full Name"
+              className="w-full px-4 py-2 border rounded-lg"
+            />
+          )}
+          <input
+            type="email"
+            placeholder="Email"
+            className="w-full px-4 py-2 border rounded-lg"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            className="w-full px-4 py-2 border rounded-lg"
+          />
+          {mode === "signup" && (
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              className="w-full px-4 py-2 border rounded-lg"
+            />
+          )}
+
+          <button
+            type="button"
+            className="w-full py-2 text-white transition bg-blue-600 rounded-lg hover:bg-blue-700"
+          >
+            {mode === "signin" ? "Sign In" : "Sign Up"}
+          </button>
+        </form>
+
+        <div className="mt-6 text-sm text-center text-gray-500">
+          {mode === "signin" ? (
+            <>
+              Don't have an account?{" "}
+              <button
+                onClick={() => setMode("signup")}
+                className="text-blue-600 hover:underline"
+              >
+                Sign Up
+              </button>
+            </>
+          ) : (
+            <>
+              Already have an account?{" "}
+              <button
+                onClick={() => setMode("signin")}
+                className="text-blue-600 hover:underline"
+              >
+                Sign In
+              </button>
+            </>
+          )}
+        </div>
+      </div>
+    
+  );
+}
+  

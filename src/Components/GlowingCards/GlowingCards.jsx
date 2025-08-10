@@ -1,4 +1,5 @@
 import CodePlate from "../CodePlate/CodePlate";
+import { Gcodes } from "./Gcodes";
 import { GlowCard1, GlowCard2, GlowCard3 } from "./GlowCard";
 
 function GlowingCard(){
@@ -16,6 +17,9 @@ function GlowingCard(){
                     <div className="w-full md:w-[50rem]">
                         <CodePlate 
                             preview={<GlowCard1 />}
+                            htmlCode={Gcodes[0].html}
+                            cssCode={Gcodes[0].css}
+                            jsCode={Gcodes[0].js}
                         />
                     </div>
                     
@@ -28,6 +32,8 @@ function GlowingCard(){
                     <div className="w-full md:w-[53rem]">
                         <CodePlate 
                           preview={<GlowCard2 />}
+                          htmlCode={Gcodes[1].html}
+                          cssCode={Gcodes[1].css}
                         />
                     </div>
                     
@@ -40,6 +46,8 @@ function GlowingCard(){
                     <div className="w-full md:w-[50rem]">
                         <CodePlate 
                            preview={<GlowCard3 />}
+                           htmlCode={Gcodes[2].html}
+                           cssCode={Gcodes[2].css}
                         />
                     </div>
                  
