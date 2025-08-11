@@ -6,6 +6,9 @@ import AnimetedButtons from "../AnimatedButtons/AnimatedButtons"
 import NormalCards from "../NormalCards/NormalCards";
 import GlowingCard from "../GlowingCards/GlowingCards";
 import SpecialCards from "../SpecialCards/SpecialCards";
+import NormalNavbars from "../NormalNavbars/NormalNavbars";
+import DarkNavbars from "../DarkNavbars/DarkNavbars";
+import SpecialNavbars from "../SpecialNavbars/SpecialNavbars";
 
 function MainComponent({menue,setMenue,type,selectedComponent }){
       
@@ -34,6 +37,18 @@ function MainComponent({menue,setMenue,type,selectedComponent }){
                     {type==='Special Cards' && <>
                         <SpecialCards />
                     </>}
+                </>}
+                {selectedComponent==="Navbars" && <>
+                    {type==='Normal Navbars' && <>
+                        <NormalNavbars />
+                    </>}
+                    {type==='Dark Navbars' && <>
+                        <DarkNavbars />
+                    </>}
+                    {type==='Special Navbars' && <>
+                        <SpecialNavbars />
+                    </>}
+                    
                 </>}
             </main>
             

@@ -33,7 +33,7 @@ function AfterHero(){
                     <span onClick={()=>navigate('/Cards')} className="px-4 py-2 font-bold text-white transition-all hover:translate-y-[-2px] inline-block duration-300 bg-blue-600 rounded-lg shadow-lg cursor-pointer animate-glow hover:shadow-blue-500/50">
                         {"</"}Cards{">"}
                     </span>
-                    <span className="px-4 py-2 font-bold text-white transition-all hover:translate-y-[-2px] inline-block duration-300 bg-green-500 rounded-lg shadow-lg cursor-pointer hover:shadow-green-500/50 animate-glowGreen">
+                    <span onClick={()=>navigate('/Navbars')} className="px-4 py-2 font-bold text-white transition-all hover:translate-y-[-2px] inline-block duration-300 bg-green-500 rounded-lg shadow-lg cursor-pointer hover:shadow-green-500/50 animate-glowGreen">
                         {"</"}Navbars{">"}
                     </span>
                 </p>

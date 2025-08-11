@@ -56,7 +56,9 @@ function Navbar() {
                                 >
                                     Buttons
                                 </li>
-                                <li className="transition-all duration-200 cursor-pointer hover:text-pink-400 hover:translate-x-1">
+                                <li
+                                    onClick={() => navigator("/Navbars")}
+                                    className="transition-all duration-200 cursor-pointer hover:text-pink-400 hover:translate-x-1">
                                     Navbars
                                 </li>
                                 <li 

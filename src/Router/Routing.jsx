@@ -1,17 +1,27 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "../Pages/Home";
-import ButtonPage from "../Pages/ButtonPage";
-import DocsPage from "../Pages/DocsPage";
-import CardPage from "../Pages/CardPage";
+import { lazy, Suspense } from "react";
+import Loader from "../Components/Loadder/Loader";
 
-function Routing(){
-    return(
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/Buttons" element={<ButtonPage />} />
-            <Route path="/Cards" element={<CardPage />} />
-            <Route path="/Docs" element={<DocsPage />} />
-        </Routes>
-    );
+const Home = lazy(() => import("../Pages/Home"));
+const ButtonPage = lazy(() => import("../Pages/ButtonPage"));
+const DocsPage = lazy(() => import("../Pages/DocsPage"));
+const CardPage = lazy(() => import("../Pages/CardPage"));
+const NavbarPage = lazy(() => import("../Pages/NaveBarPage"));
+
+function Routing() {
+  return (
+    <Suspense
+      fallback={<Loader />}
+    >
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Buttons" element={<ButtonPage />} />
+        <Route path="/Cards" element={<CardPage />} />
+        <Route path="/Navbars" element={<NavbarPage />} />
+        <Route path="/Docs" element={<DocsPage />} />
+      </Routes>
+    </Suspense>
+  );
 }
+
 export default Routing;
