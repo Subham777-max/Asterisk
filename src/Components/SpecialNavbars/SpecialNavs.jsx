@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export function SpecialNav1() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +25,7 @@ export function SpecialNav1() {
       </button>
 
       {isOpen && (
-        <div className="absolute top-[12vh] left-0 w-full backdrop-blur-md bg-white/10 border-t border-white/20 rounded-b-md shadow-lg flex flex-col items-center gap-4 py-4 md:hidden z-50">
+        <div className="absolute top-[12vh] left-0 w-full animate-slideDown backdrop-blur-md bg-white/10 border-t border-white/20 rounded-b-md shadow-lg flex flex-col items-center gap-4 py-4 md:hidden z-50">
           <a className="cursor-pointer hover:text-blue-300">Home</a>
           <a className="cursor-pointer hover:text-blue-300">About</a>
           <a className="cursor-pointer hover:text-blue-300">Service</a>
@@ -63,7 +63,7 @@ export function SpecialNav2() {
       </button>
 
       {isOpen && (
-        <div className="absolute top-[12vh] left-0 w-full bg-gradient-to-b from-pink-500 via-purple-500 to-indigo-500 rounded-b-md shadow-lg flex flex-col items-center gap-4 py-4 md:hidden z-50">
+        <div className="absolute top-[12vh] left-0 w-full animate-slideDown bg-gradient-to-b from-pink-500 via-purple-500 to-indigo-500 rounded-b-md shadow-lg flex flex-col items-center gap-4 py-4 md:hidden z-50">
           <a className="cursor-pointer hover:drop-shadow-[0_0_10px_#fff]">Home</a>
           <a className="cursor-pointer hover:drop-shadow-[0_0_10px_#fff]">About</a>
           <a className="cursor-pointer hover:drop-shadow-[0_0_10px_#fff]">Service</a>
@@ -158,7 +158,7 @@ export function SpecialNav4() {
       </button>
 
       {isOpen && (
-        <div className="absolute top-[12vh] left-0 w-full bg-[#222] rounded-b-md shadow-[0_0_0_3px_#ffcc00] flex flex-col items-center gap-4 py-4 md:hidden z-50">
+        <div className="absolute top-[12vh] left-0 w-full animate-slideDown bg-[#222] rounded-b-md shadow-[0_0_0_3px_#ffcc00] flex flex-col items-center gap-4 py-4 md:hidden z-50">
           <a className="cursor-pointer hover:bg-[#ffcc00] hover:text-black px-2 py-1">Home</a>
           <a className="cursor-pointer hover:bg-[#ffcc00] hover:text-black px-2 py-1">About</a>
           <a className="cursor-pointer hover:bg-[#ffcc00] hover:text-black px-2 py-1">Service</a>
@@ -170,3 +170,77 @@ export function SpecialNav4() {
     </nav>
   );
 }
+
+
+
+
+
+export function SpecialNav5() {
+  const [pos, setPos] = useState({ x: 0, y: 0 });
+  const [isOpen, setIsOpen] = useState(false);
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      const rect = navRef.current.getBoundingClientRect();
+      setPos({
+        x: e.clientX - rect.left,
+        y: e.clientY - rect.top,
+      });
+    };
+
+    const nav = navRef.current;
+    nav.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      nav.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
+  return (
+    <nav
+      ref={navRef}
+      className="relative w-[30rem] max-w-full h-[12vh] bg-gray-900 text-white rounded-md shadow-lg flex justify-between items-center px-4 md:px-6"
+    >
+      {/* Glow effect */}
+      <div
+        className="absolute w-24 h-24 transition-all duration-500 ease-out rounded-full pointer-events-none bg-purple-500/40 blur-2xl"
+        style={{
+          top: `${pos.y - 48}px`,
+          left: `${pos.x - 48}px`,
+        }}
+      ></div>
+
+      {/* Logo */}
+      <div className="z-10 text-lg font-bold cursor-pointer">SmoothGlow</div>
+
+      {/* Desktop menu */}
+      <ul className="z-10 hidden gap-4 text-sm font-medium md:flex">
+        <li className="cursor-pointer hover:text-purple-300">Home</li>
+        <li className="cursor-pointer hover:text-purple-300">About</li>
+        <li className="cursor-pointer hover:text-purple-300">Services</li>
+      </ul>
+
+      {/* Mobile hamburger */}
+      <button
+        className="z-10 text-2xl md:hidden"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        {isOpen ? "✖" : "☰"}
+      </button>
+
+      {/* Mobile menu */}
+      {isOpen && (
+        <div
+          className="absolute top-[12vh] left-0 w-full bg-gray-900 border-t border-purple-500 flex flex-col items-center gap-4 py-4 md:hidden z-50
+                    animate-slideDown"
+        >
+          <a className="cursor-pointer hover:text-purple-300">Home</a>
+          <a className="cursor-pointer hover:text-purple-300">About</a>
+          <a className="cursor-pointer hover:text-purple-300">Services</a>
+        </div>
+      )}
+    </nav>
+  );
+}
+

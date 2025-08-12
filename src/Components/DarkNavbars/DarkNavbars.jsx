@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import CodePlate from "../CodePlate/CodePlate";
 import { DarkNav1, DarkNav2, DarkNav3 } from "./DarkNavs";
+import { Dnavs } from "./Dnavs";
 
 function DarkNavbars() {
     const [showPopup, setShowPopup] = useState(false);
@@ -43,6 +44,9 @@ function DarkNavbars() {
                         <div className="w-full md:w-[50rem]">
                             <CodePlate
                                 preview={<DarkNav1 />}
+                                htmlCode={Dnavs[0].html}
+                                cssCode={Dnavs[0].css}
+                                jsCode={Dnavs[0].js}
                             />
                         </div>
                     </div>
@@ -54,6 +58,9 @@ function DarkNavbars() {
                         <div className="w-full md:w-[50rem]">
                             <CodePlate
                                 preview={<DarkNav2 />}
+                                htmlCode={Dnavs[1].html}
+                                cssCode={Dnavs[1].css}
+                                jsCode={Dnavs[1].js}
                             />
                         </div>
                     </div>
@@ -65,6 +72,9 @@ function DarkNavbars() {
                         <div className="w-full md:w-[50rem]">
                             <CodePlate
                                 preview={<DarkNav3 />}
+                                htmlCode={Dnavs[2].html}
+                                cssCode={Dnavs[2].css}
+                                jsCode={Dnavs[2].js}
                             />
                         </div>
                     </div>

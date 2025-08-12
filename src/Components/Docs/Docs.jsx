@@ -17,11 +17,14 @@ function Docs() {
             <p className="mb-4 text-gray-400">
                 No installations or frameworks required. Just copy the HTML, CSS, and JS snippets and you're good to go.
             </p>
+            <p className="mb-4 text-gray-400">
+                Just delete the extra css part (if you don’t need that) or You can also customise it as you want.
+            </p>
             <div className="bg-[#191d23] p-4 rounded-lg overflow-auto text-sm text-green-400">
                 <code>
     {`<!-- Paste this in your HTML -->
     <link rel="stylesheet" href="styles.css">
-    <script src="component.js" defer></script><!-- And then copy and past the html , css ,jss from components section -->`}
+    <script src="component.js" defer></script><!-- And then copy and past the html , css ,js from components section -->`}
                 </code>
             </div>
             </section>
@@ -41,8 +44,12 @@ function Docs() {
                 <li>Normal Buttons</li>
                 <li>Glowing Buttons</li>
                 <li>Animeted Buttons</li>
-                <li>Cards</li>
-                <li>Minimal Navbars</li>           
+                <li>Normal Cards</li>
+                <li>Glowing Cards</li>
+                <li>Special Cards</li>
+                <li>Normal Navbars</li>           
+                <li>Dark Navbars</li>           
+                <li>Special Navbars</li>           
                 <li>Form Elements <span className="text-gray-400">{"("}You will find it in Cards section{")"}</span></li>
             </ul>
             <p className="mt-4 italic text-gray-500">
@@ -61,7 +68,7 @@ function Docs() {
                 <pre>
     {`<button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded shadow">
     Click Me
-    </button>`}
+</button>`}
                 </pre>
             </div>
             </section>

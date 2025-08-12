@@ -43,6 +43,10 @@ export default {
           '0%': { transform: 'rotate(0deg)' },
           '100%': { transform: 'rotate(360deg)' },
         },
+        slideDown: {
+          '0%': { transform: 'translateY(-20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
       },
       animation: {
         floatY: 'floatY 3s ease-in-out infinite',
@@ -51,6 +55,7 @@ export default {
         glowRed: 'glowRed 1.5s ease-in-out infinite',
         glowGreen: 'glowGreen 1.5s ease-in-out infinite',
         'spin-slow': 'rotate 2s linear infinite',
+        slideDown: 'slideDown 0.3s ease-out',
       },
     },
   },

@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import CodePlate from "../CodePlate/CodePlate";
-import { SpecialNav1, SpecialNav2, SpecialNav3 } from "./SpecialNavs";
-import { SpecialNav4 } from "./SpecialNavs";
+import  { SpecialNav1, SpecialNav2, SpecialNav3 } from "./SpecialNavs";
+import { SpecialNav4,SpecialNav5 } from "./SpecialNavs";
+import { spnavcodes } from "./SpnavCodes";
 
 function SpecialNavbars() {
     const [showPopup, setShowPopup] = useState(false);
@@ -44,6 +45,9 @@ function SpecialNavbars() {
                         <div className="w-full md:w-[50rem]">
                             <CodePlate
                                 preview={<SpecialNav1 />}
+                                htmlCode={spnavcodes[0].html}
+                                cssCode={spnavcodes[0].css}
+                                jsCode={spnavcodes[0].js}
                             />
                         </div>
                     </div>
@@ -55,6 +59,9 @@ function SpecialNavbars() {
                         <div className="w-full md:w-[50rem]">
                             <CodePlate
                                 preview={<SpecialNav2 />}
+                                htmlCode={spnavcodes[1].html}
+                                cssCode={spnavcodes[1].css}
+                                jsCode={spnavcodes[1].js}
                             />
                         </div>
                     </div>
@@ -66,6 +73,9 @@ function SpecialNavbars() {
                         <div className="w-full md:w-[50rem]">
                             <CodePlate
                                 preview={<SpecialNav3 />}
+                                htmlCode={spnavcodes[2].html}
+                                cssCode={spnavcodes[2].css}
+                                jsCode={spnavcodes[2].js}
                             />
                         </div>
                     </div>
@@ -76,6 +86,22 @@ function SpecialNavbars() {
                         <div className="w-full md:w-[50rem]">
                             <CodePlate
                                 preview={<SpecialNav4 />}
+                                htmlCode={spnavcodes[3].html}
+                                cssCode={spnavcodes[3].css}
+                                jsCode={spnavcodes[3].js}
+                            />
+                        </div>
+                    </div>
+                    <h1 className="mt-4 text-2xl font-bold text-white mb-6 border-b-2 border-[#3B4451] inline-block pb-2">
+                        5{") "}Navbar  5:
+                    </h1>
+                    <div className="flex flex-col items-center justify-center w-full gap-5">
+                        <div className="w-full md:w-[50rem]">
+                            <CodePlate
+                                preview={<SpecialNav5 />}
+                                htmlCode={spnavcodes[4].html}
+                                cssCode={spnavcodes[4].css}
+                                jsCode={spnavcodes[4].js}
                             />
                         </div>
                     </div>

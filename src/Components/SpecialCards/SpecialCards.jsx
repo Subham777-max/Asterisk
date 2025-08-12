@@ -25,6 +25,7 @@ function SpecialCards(){
                     
                 </div>
                 <p className="m-4 text-xl">Click on see details</p>
+                <p className="m-4 text-xs">Recomentation: If you are not using a shoe image then remove the rotate property from css</p>
                 <h1 className="text-2xl font-bold text-white mb-6 border-b-2 border-[#3B4451] inline-block pb-2">
                     2{") "}Special Card 2:
                 </h1>

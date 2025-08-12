@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import CodePlate from "../CodePlate/CodePlate";
 import { Nav1, Nav2, Nav3 } from "./Navs";
+import { navCodes } from "./navcodes";
 
 function NormalNavbars() {
     const [showPopup, setShowPopup] = useState(false);
@@ -43,6 +44,9 @@ function NormalNavbars() {
                         <div className="w-full md:w-[50rem]">
                             <CodePlate
                                 preview={<Nav1 />}
+                                htmlCode={navCodes[0].html}
+                                cssCode={navCodes[0].css}
+                                jsCode={navCodes[0].js}
                             />
                         </div>
                     </div>
@@ -54,6 +58,9 @@ function NormalNavbars() {
                         <div className="w-full md:w-[50rem]">
                             <CodePlate
                                 preview={<Nav2 />}
+                                htmlCode={navCodes[1].html}
+                                cssCode={navCodes[1].css}
+                                jsCode={navCodes[1].js}
                             />
                         </div>
                     </div>
@@ -65,6 +72,9 @@ function NormalNavbars() {
                         <div className="w-full md:w-[50rem]">
                             <CodePlate
                                 preview={<Nav3 />}
+                                htmlCode={navCodes[2].html}
+                                cssCode={navCodes[2].css}
+                                jsCode={navCodes[2].js}
                             />
                         </div>
                     </div>

@@ -19,7 +19,6 @@ function AfterHero(){
                     <li>Plug-and-play code</li>
                     <li>Clean, consistent UI</li>
                     <li>Fully responsive out of the box</li>
-                    <li>Dark mode ready</li>
                 </ul>
 
                 <p className="text-xs text-gray-400">
