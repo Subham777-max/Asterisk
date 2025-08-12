@@ -1,4 +1,4 @@
-import{j as e,d as a,u as s}from"./index-COrbE4mt.js";import{G as r,N as n,F as l}from"./Navbar-D2pSI42j.js";const o=()=>e.jsx("div",{className:"text-white font-mono whitespace-pre",children:e.jsx(a.Typewriter,{words:[`
+import{j as e,d as a,u as s}from"./index-Boo50CUz.js";import{G as r,N as n,F as l}from"./Navbar-DH_0uCag.js";const o=()=>e.jsx("div",{className:"text-white font-mono whitespace-pre",children:e.jsx(a.Typewriter,{words:[`
     .card {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 1rem;
