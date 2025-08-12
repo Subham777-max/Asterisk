@@ -2,7 +2,7 @@ import { ImCross } from "react-icons/im";
 function AsideComponent({menue,setMenue,setType,text1,text2,text3}){
     return (
         <>
-            <aside className={`h-[100vh] font-mono lg:p-4 transition-all duration-[0.5s] ease ${menue?'w-[30vh] p-4':'w-0'} lg:w-[30vh] bg-[#2A303C] fixed inset-0`}>
+            <aside className={`h-[100vh] z-20 font-mono lg:p-4 transition-all duration-[0.5s] ease ${menue?'w-[30vh] p-4':'w-0'} lg:w-[30vh] bg-[#2A303C] fixed inset-0`}>
                 {menue && <>
                     <button onClick={()=>setMenue(false)} className={`text-2xl mt-[14vh] lg:hidden`}><ImCross /></button>
                     <div className="flex flex-col items-center justify-between w-full lg:hidden h-[70vh] ">

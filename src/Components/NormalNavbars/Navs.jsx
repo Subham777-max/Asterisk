@@ -4,7 +4,7 @@ export function Nav1() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-[30rem] max-w-full text-black bg-white rounded-md shadow-md flex justify-between items-center h-[12vh] p-2 md:p-4 relative">
+    <nav className="w-[18rem] sm:w-[30rem] max-w-full text-black bg-white rounded-md shadow-md flex justify-between items-center h-[12vh] p-2 md:p-4 relative">
       <div className="text-2xl font-bold">
         <h1 className="cursor-pointer select-none">Logo</h1>
       </div>
@@ -47,7 +47,7 @@ export function Nav2() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-[30rem] max-w-full text-black bg-white rounded-md shadow-md flex justify-between items-center h-[12vh] p-2 md:p-4 relative">
+    <nav className="w-[18rem] sm:w-[30rem] max-w-full text-black bg-white rounded-md shadow-md flex justify-between items-center h-[12vh] p-2 md:p-4 relative">
       <div className="text-2xl font-bold">
         <h1 className="cursor-pointer select-none">Logo</h1>
       </div>
@@ -92,7 +92,7 @@ export function Nav3() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-[30rem] max-w-full text-black bg-white rounded-md shadow-md flex justify-between items-center h-[12vh] p-2 md:p-4 relative">
+    <nav className="w-[18rem] sm:w-[30rem] max-w-full text-black bg-white rounded-md shadow-md flex justify-between items-center h-[12vh] p-2 md:p-4 relative">
       <div className="flex items-center gap-2 text-2xl font-bold">
         <h1 className="cursor-pointer select-none">Logo</h1>
         <ul className="hidden gap-5 text-sm font-semibold md:flex">

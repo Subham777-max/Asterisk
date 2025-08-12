@@ -4,7 +4,7 @@ export function SpecialNav1() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-[30rem] max-w-full text-white backdrop-blur-md bg-white/10 border border-white/20 rounded-md shadow-lg flex justify-between items-center h-[12vh] p-2 md:p-4 relative">
+    <nav className="w-[18rem] sm:w-[30rem] max-w-full text-white backdrop-blur-md bg-white/10 border border-white/20 rounded-md shadow-lg flex justify-between items-center h-[12vh] p-2 md:p-4 relative">
       <div className="text-2xl font-bold cursor-pointer">GlassyNav</div>
 
       <ul className="hidden gap-5 text-sm font-semibold md:flex">
@@ -42,7 +42,7 @@ export function SpecialNav2() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-[30rem] max-w-full text-white bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 rounded-md shadow-lg flex justify-between items-center h-[12vh] p-2 md:p-4 relative">
+    <nav className="w-[18rem] sm:w-[30rem] max-w-full text-white bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 rounded-md shadow-lg flex justify-between items-center h-[12vh] p-2 md:p-4 relative">
       <div className="text-2xl font-extrabold tracking-wide cursor-pointer">GlowNav</div>
 
       <ul className="hidden gap-5 text-sm font-semibold md:flex">
@@ -80,7 +80,7 @@ export function SpecialNav3() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-[30rem] max-w-full h-[12vh] px-4 flex items-center justify-between rounded-md shadow-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white relative overflow-hidden">
+    <nav className="w-[18rem] sm:w-[30rem] max-w-full h-[12vh] px-4 flex items-center justify-between rounded-md shadow-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white relative overflow-hidden">
       <div className="text-2xl font-bold tracking-wide cursor-pointer">Aurora</div>
 
       
@@ -137,7 +137,7 @@ export function SpecialNav4() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-[30rem] max-w-full text-white bg-[#222] font-mono rounded-md shadow-[0_0_0_3px_#ffcc00] flex justify-between items-center h-[12vh] p-2 md:p-4 relative">
+    <nav className="w-[18rem] sm:w-[30rem] max-w-full text-white bg-[#222] font-mono rounded-md shadow-[0_0_0_3px_#ffcc00] flex justify-between items-center h-[12vh] p-2 md:p-4 relative">
       <div className="text-2xl font-bold tracking-tight cursor-pointer">PixelNav</div>
 
       <ul className="hidden gap-5 text-sm font-bold uppercase md:flex">
@@ -200,9 +200,9 @@ export function SpecialNav5() {
   return (
     <nav
       ref={navRef}
-      className="relative w-[30rem] max-w-full h-[12vh] bg-gray-900 text-white rounded-md shadow-lg flex justify-between items-center px-4 md:px-6"
+      className="relative w-[18rem] sm:w-[30rem] max-w-full h-[12vh] bg-gray-900 text-white rounded-md shadow-lg flex justify-between items-center px-4 md:px-6"
     >
-      {/* Glow effect */}
+      
       <div
         className="absolute w-24 h-24 transition-all duration-500 ease-out rounded-full pointer-events-none bg-purple-500/40 blur-2xl"
         style={{
