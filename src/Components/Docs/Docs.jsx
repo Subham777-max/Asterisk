@@ -1,6 +1,6 @@
 function Docs() {
   return (
-    <div className="mt-[13vh] min-h-screen bg-[#0f1115] text-white px-4 sm:px-6 md:px-12 py-8 sm:py-12 w-full">
+    <div className="mt-[9.7vh] min-h-screen bg-[#0f1115] text-white px-4 sm:px-6 md:px-12 py-8 sm:py-12 w-full">
       
       <header className="max-w-5xl px-2 mx-auto mb-12 sm:mb-16 sm:px-0">
         <h1 className="mb-4 text-3xl font-bold sm:text-4xl md:text-5xl">Documentation</h1>

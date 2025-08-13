@@ -8,7 +8,7 @@ Users may obtain the **HTML, CSS, and JavaScript code** of individual components
 ---
 
 ## 🚀 Live Demo
-[View Asterisk](https://Subham777-max.github.io/Asterisk/)
+[View Asterisk](https://asterisk-components.netlify.app/)
 
 ---
 
